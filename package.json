@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/netcreaties/has-one-of-label#readme",
     "dependencies": {
-        "@types/node": "^18.11.9",
+        "@types/node": "^16",
         "actions-toolkit": "^6.0.1",
         "typescript": "^3.9.2"
     },
