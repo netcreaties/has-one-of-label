@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [$1 -eq 'false']
+if [$1 -eq "false"]
 then
     echo 0;
 else

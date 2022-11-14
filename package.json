@@ -1,0 +1,29 @@
+{
+    "name": "@netcreaties/has-one-of-label",
+    "private": true,
+    "description": "Github action that allows you to (optionally) check if a label has been set within a list of labels, if one of that list is set, get it as output",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "start": "ts-node src/index.ts",
+        "test": "echo \"Error: no test specified\" && exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/netcreaties/has-one-of-label.git"
+    },
+    "author": "Roy Freij",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/netcreaties/has-one-of-label/issues"
+    },
+    "homepage": "https://github.com/netcreaties/has-one-of-label#readme",
+    "dependencies": {
+        "@types/node": "^18.11.9",
+        "actions-toolkit": "^6.0.1",
+        "typescript": "^3.9.2"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.1"
+    }
+}

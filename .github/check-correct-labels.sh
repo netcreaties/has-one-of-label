@@ -1,8 +1,12 @@
 #!/bin/bash
 
-if [$1 -eq 'patch' -and $2 -eq 'true']
+echo $1;
+echo $2;
+
+if [[ $1 == "patch" ]] && [[ $2 == "true" ]]
 then
     echo 0;
 else
     echo 1;
 fi
+ 

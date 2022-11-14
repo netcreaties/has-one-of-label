@@ -1,0 +1,23 @@
+name: HasOneOfLabel
+description: Github action that allows you to (optionally) check if a label has been set within a list of labels, if one of that list is set, get it as output
+author: RFreij
+runs:
+    using: "node18"
+    main: "./dist/index.js"
+branding:
+    icon: crosshair
+    color: gray-dark
+inputs:
+    labels:
+        description: "Comma separated list of labels to check for, first one found is returned"
+        required: true
+        default: ""
+    optional:
+        description: "(yes/no) Make the check optional preventing it from failing the build"
+        required: false
+        default: "no"
+outputs:
+    found:
+        description: "Boolean value as string that a label has been found within specified list e.g. 'false' or 'true'"
+    matched:
+        description: "The first label that matches with one of the labels specified"
