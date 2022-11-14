@@ -2,7 +2,7 @@ name: HasOneOfLabel
 description: Github action that allows you to (optionally) check if a label has been set within a list of labels, if one of that list is set, get it as output
 author: RFreij
 runs:
-    using: "node18"
+    using: "node16"
     main: "./dist/index.js"
 branding:
     icon: crosshair
