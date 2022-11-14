@@ -5,7 +5,7 @@ Checks if one of specified labels is set, if so sends the first found label back
 ## Usage
 
 ```
-name: Testing action when opening or changing PR
+name: Publish version based on label
 
 on:
     pull_request:
