@@ -21,6 +21,6 @@ jobs:
                   optional: "yes"
                   labels: "pluto,mars,venus"
             - name: Validating correct label output
-              run: bash ./.github/check-correct-labels.sh ${steps.correctLabels.outputs.matched} ${steps.correctLabels.outputs.found}
+              run: bash ./.github/check-correct-labels.sh ${{ steps.correctLabels.outputs.matched }} ${steps.correctLabels.outputs.found }}
             - name: Validating incorrect label output
-              run: bash ./.github/check-incorrect-labels.sh ${steps.correctLabels.outputs.found}
+              run: bash ./.github/check-incorrect-labels.sh ${{ steps.correctLabels.outputs.found }}
